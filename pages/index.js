@@ -2,7 +2,7 @@
 import React from "react";
 import Head from "next/head";
 import Link from "next/link";
-import styles from "../../styles/Details.module.css";
+import styles from "../../styles/details.module.css";
 
 export async function getStaticPaths() {
   const resp = await fetch(
