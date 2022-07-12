@@ -11,7 +11,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
       );
     const pokemonTotal = await resp.json()
     var pagTotal = pokemonTotal.length;
-    const numberOfPages = Math.ceil(pagTotal / 9.0);
+    const numberOfPages = Math.ceil(pagTotal / 12.0);
 
     const paths = Array(numberOfPages- 1).fill('').map((_, index) => {
         return { params: {currentPage: (index + 1).toString()}}
